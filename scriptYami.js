@@ -47,16 +47,17 @@ $(document).ready(function () {
 
             edad: {
                 required: "Este es un campo obligatorio.",
-                min: "Ingresar un número mayor a 0 y menor a 150"
+                max: "Ingresar un número mayor a 0 y menor a 150"
             },
             email: {
                 required: "Este es un campo obligatorio.",
-                email: "El formato del correo es este: abc@domain.tld"
+                email: "El formato del correo es este: abdsdfc@abc.cl"
             },
 
             telefono: {
                 required: "Este es un campo obligatorio.",
-                maxlength: "Dígitos entre 0 y 9"
+                maxlength: "Ingrese número de teléfono válido",
+                minlength: "Ingresar número de teléfono"
             },
 
             cap: {
