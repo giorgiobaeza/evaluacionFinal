@@ -318,8 +318,6 @@ function validaRut(campo){
     if ( campo.length < 8 ){ return false; }
 
     campo = campo.replace('-','')
-    campo = campo.replace(/\./g,'')
-
     var suma = 0;
     var caracteres = "1234567890kK";
     var contador = 0;    
