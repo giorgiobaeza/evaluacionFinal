@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresa de Asesorías</title>
     <link rel="stylesheet" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -15,20 +18,24 @@
             Ingreso
         </h2>
     </header>
-<legend>
-        <form>
-<table>
-        <tr>
-            <td>Rut</td>
-            <td><input type="text" name="rut" /></td>                 
-        </tr>
-        <tr>
-            <td>Contraseña</td>
-            <td> <input  type="text" name="password" /></td>
-        </tr>
+    <legend>
+        <form class="cmxform" id="loginForm" method="get" action="listadousuarios.html">
+            <fieldset>
+            <table>
+                <tr>
+                    <td>Rut</td>
+                    <td><input type="text" name="rutlogin" id="rutlogin" placeholder="12345678-k"/></td>                 
+                </tr>
+                <tr>
+                    <td>Contraseña</td>
+                    <td> <input  type="password" name="passlogin" id="passlogin"/></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" id="ingresar"  name="ingresar" value="ingresar"/></td>
+                </tr>
             
-        </table>
-
+            </table>
+            </fieldset>
         </form>
     </legend>
     <aside id="aside">
