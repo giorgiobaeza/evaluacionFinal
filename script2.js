@@ -34,8 +34,4 @@ $('#btnestilo3').on('click', function() {
 }
 );
 
-
-
-
-
 });
