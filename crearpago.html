@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Pago</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body onload="fechaActual();">
+    <div id="agrupar">
+      <header id="cabecera">
+        <h2>Crear Pagos</h2>
+      </header>
+      <form>
+        <legend>
+          <table>
+            <tr>
+              
+            </tr>
+
+            
+            <tr>
+              <td>Monto de Pago</td>
+              <td>
+                <input  type="number"  value="" id="monto"/>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>Mes</td>
+                <td><select name="mes" id="mes">
+                  <option>seleccione una opción</option>
+
+                  <script type="text/javascript">
+                    RangoMesAnio(1, 12);
+                  </script>
+                </select></td>
+              </tr>
+              <tr>
+                <td>Año</td>
+                  <td><select name="anio" id="anio">
+                    <option>seleccione una opción</option>
+                    <script type="text/javascript">
+                      RangoMesAnio(2010, 41);
+                    </script>
+                  </select></td>
+                </tr>
+            <tr>
+              <td>RUT del cliente</td>
+              <td>
+                <input type="number" name="rutcliente" value="" id="rutcliente" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Fecha actual</td>
+              
+              <td><input id="fecha"/></td> 
+           
+            </tr>
+            <tr>
+              <td><input type="button" id="ingresadatos" value="Ingresar datos" onclick="ingresaDatos()"></td>
+            </tr>
+            
+          </table>
+        </legend>
+      </form>
+ 
+      <aside id="aside">
+        <blockquote><a href="index.html">Página de Inicio</a></blockquote>
+      </aside>
+      <footer id="pie">Derechos Reservados G3 &copy; 2020</footer>
+    </div>
+    
+  </body>
+</html>

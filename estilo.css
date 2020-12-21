@@ -1,0 +1,222 @@
+body {
+    background-image: url(https://coordinatecnica.com/wp-content/uploads/2014/10/fondo-1-1920.jpg);
+
+}
+
+.chart-container {
+    width: 200px;
+    height: 200px
+}
+
+
+.error {
+    background-color: rgb(255, 164, 164);
+    border-color: red;
+}
+
+.validado {
+    background-color: #b6f3ff;
+    border-color: #009013
+}
+
+h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2 {
+    color: #82EEFD;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h3 {
+    color: #022D36;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p {
+    color: white;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+td {
+    color: #022D36;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    border: 1px solid #999999;
+    align-content: center;
+}
+
+table {
+    align-items: center;
+    width: auto;
+    margin: 0 auto;
+}
+
+input {
+    margin: 10px;
+}
+canvas{
+    background-color: #c9e8ee;
+}
+
+fieldset {
+    max-width: 1000px;
+    background-color: rgb(65, 0, 61, 0.2);
+    margin-right: auto;
+}
+
+legend {
+    align-items: center;
+    margin-right: auto;
+
+}
+
+.negrita {
+    font-weight: bold
+}
+
+a {
+    color: #82EEFD;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#agrupar {
+
+    width: 960px;
+    margin: 15px auto;
+    text-align: left;
+}
+
+#cabecera {
+    background-color: #022D36;
+    border: 1px solid #999999;
+    padding: 20px;
+    width: 100%;
+
+}
+
+#seccion {
+    background-color: rgb(65, 0, 61, 0.2);
+    float: left;
+    width: 100%;
+    margin: auto;
+
+}
+
+#aside {
+    background-color: #022D36;
+    display: inline-block;
+    margin: 15px auto;
+    width: 100%;
+    border: 1px solid #999999;
+}
+
+#pie {
+    background-color: #022D36;
+    color: #82EEFD;
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #999999;
+}
+
+.lista {
+    background-color: #022D36;
+    color: #82EEFD;
+    width: 0 auto;
+
+}
+
+.boton {
+    background-color: #022D36;
+    color: #82EEFD;
+    clear: both;
+    text-align: center;
+    font-size: 20px;
+    width: 0 auto;
+    align-content: center;
+    border-top: 2px solid #999999;
+}
+
+#menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+#menu li {
+    text-align: center;
+    flex-grow: 1;
+}
+
+#menu li:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px;
+    font: bold 14px verdana, sans-serif;
+    width: 100%;
+    float: none;
+}
+
+@media (min-width:1024px) {
+
+    #section,
+    #agrupar,
+    #cabecera,
+    #columna,
+    #pie,
+    #menu li,
+    #menu ul {
+        width: auto;
+
+    }
+
+}
+
+@media (min-width:480px) {
+
+    #section,
+    #agrupar,
+    #cabecera,
+    #columna,
+    #pie,
+    #menu li,
+    #menu ul {
+        width: 40%;
+
+    }
+
+}
+
+@media (min-width:600px) {
+
+    #section,
+    #agrupar,
+    #cabecera,
+    #columna,
+    #pie,
+    #menu li,
+    #menu ul {
+        width: auto;
+
+    }
+
+}

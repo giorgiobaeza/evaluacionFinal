@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Asesorías</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div id="agrupar">
+        <header id="cabecera">
+            <h2>Listado Chequeos</h2>
+        </header>
+        <form>
+            <legend>
+                <table>
+
+                    <tr class="negrita">
+                        <td>Id Chequeo</td>
+                        <td>Nombre</td>
+                        <td>Seleccione chequeo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Servicios higiénicos</td>
+                        <td><input type="checkbox" name="checkbox" value="Servicios higiénicos" id="chek1" /></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sala de vestir</td>
+                        <td><input type="checkbox" name="checkbox" value="Sala de vestir" id="chek2" /></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Comedores</td>
+                        <td><input type="checkbox" name="checkbox" value="Comedores" id="chek3" /></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Escaleras</td>
+                        <td><input type="checkbox" name="checkbox" value="Comedores" id="chek4" /></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Señalización</td>
+                        <td><input type="checkbox" name="checkbox" value="Señalización" id="chek5" /></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Instalaciones eléctricas</td>
+                        <td><input type="checkbox" name="checkbox" value="Instalaciones eléctricas" id="chek6" /></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Extintores</td>
+                        <td><input type="checkbox" name="checkbox" value="Extintores" id="chek7" /></td>
+                    </tr>
+                    <tr >
+                        <td colspan="3" >
+                    <input type="button" class="boton" value="Chequeo" name="cheq" id="chek8" onclick="chequeo()" >
+
+                <div id="chek9" class="lista" ></div>
+            </td>
+            </tr>
+                </table>
+                
+
+            </legend>
+        </form>
+
+
+
+        <aside id="aside">
+
+            <blockquote><a href="index.html">Página de Inicio</a></blockquote>
+
+        </aside>
+        <footer id="pie">
+            Derechos Reservados G3 &copy; 2020
+        </footer>
+    </div>
+    <script type="text/javascript">
+        function chequeo() {
+            c1 = document.getElementById("chek1");
+            c2 = document.getElementById("chek2");
+            c3 = document.getElementById("chek3");
+            c4 = document.getElementById("chek4");
+            c5 = document.getElementById("chek5");
+            c6 = document.getElementById("chek6");
+            c7 = document.getElementById("chek7");
+            var text1 = "";
+            var text2 = "";
+            var text3 = "";
+            var text4 = "";
+            var text5 = "";
+            var text6 = "";
+            var text7 = "";
+            if (c1.checked || c2.checked || c3.checked || c4.checked || c5.checked || c6.checked || c7.checked) {
+
+                if (c1.checked) {
+                    var text1 = "<li>Servicios higiénicos</li>";
+                }
+                if (c2.checked) {
+                    var text2 = "<li>Sala de vestir</li>";
+                }
+                if (c3.checked) {
+                    var text3 = "<li>Comedores</li>";
+                }
+                if (c4.checked) {
+                    var text4 = "<li>Señalización</li>";
+                }
+                if (c5.checked) {
+                    var text5 = "<li>Señalización</li>";
+                }
+                if (c6.checked) {
+                    var text6 = "<li>Instalaciones eléctricas</li>";
+                }
+                if (c7.checked) {
+                    var text7 = "<li>Extintores</li>";
+                }
+                document.getElementById('chek9').innerHTML = 'Chequeos Seleccionados<ul>' + text1 + text2 + text3 + text4 + text5 + text6 + text7
+                    '</ul>';
+                
+            } else
+                alert("Por favor seleccionar al menos un chequeo")
+        }
+    </script>
+
+</body>
+
+</html>
