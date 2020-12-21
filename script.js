@@ -312,5 +312,74 @@ $(document).ready(function(){
 
 
 });
+//función para validar rut
+function validaRut(campo){
+    if ( campo.length == 0 ){ return false; }
+    if ( campo.length < 8 ){ return false; }
 
+    campo = campo.replace('-','')
+    campo = campo.replace(/\./g,'')
+
+    var suma = 0;
+    var caracteres = "1234567890kK";
+    var contador = 0;    
+    for (var i=0; i < campo.length; i++){
+        u = campo.substring(i, i + 1);
+        if (caracteres.indexOf(u) != -1)
+        contador ++;
+    }
+    if ( contador==0 ) { return false }
+    
+    var rut = campo.substring(0,campo.length-1)
+    var drut = campo.substring( campo.length-1 )
+    var dvr = '0';
+    var mul = 2;
+    
+    for (i= rut.length -1 ; i >= 0; i--) {
+        suma = suma + rut.charAt(i) * mul
+                if (mul == 7) 	mul = 2
+                else	mul++
+    }
+    res = suma % 11
+    if (res==1)		dvr = 'k'
+                else if (res==0) dvr = '0'
+    else {
+        dvi = 11-res
+        dvr = dvi + ""
+    }
+    if ( dvr != drut.toLowerCase() ) { return false; }
+    else { return true; }
+}
+
+//validaciones para archivo login.html
+$(document).ready(function(){
+
+    $.validator.addMethod("rut", function (value, element, arg) {
+        return this.optional(element) || validaRut(value);
+    }, "Value must not equal arg.")
+    $('#loginForm').validate({
+        rules: {
+            rutlogin: {
+                required: true,
+                rut: true
+            },
+            passlogin: {
+                required: true,
+                maxlength: 20
+            }, 
+        },
+        messages: {
+            rutlogin: {
+                required: "Este es un campo obligatorio.",
+                rut: "Debe ingresar su rut sin puntos con guión"
+            },
+            passlogin: {
+                required: "Este es un campo obligatorio.",
+                maxlength: "Su contraseña es demasiado larga."
+            },
+
+        }
+    });
+
+});
 
