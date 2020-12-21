@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    //validaciones para formularios
+    //validaciones para formulario Administra Asistentes
     $.validator.addMethod("valueNotEquals", function (value, element, arg) {
         return arg !== value;
     }, "Value must not equal arg.")
@@ -28,7 +28,8 @@ $(document).ready(function () {
             },
             telefono: {
                 required: true,
-                maxlength: 9
+                minlength: 12
+                
             },
             cap: {
                 valueNotEquals: "default"
@@ -56,10 +57,8 @@ $(document).ready(function () {
 
             telefono: {
                 required: "Este es un campo obligatorio.",
-                maxlength: "Ingrese número de teléfono válido",
-                minlength: "Ingresar número de teléfono"
+                minlength: "Ingrese número de teléfono válido",
             },
-
             cap: {
                 valueNotEquals: "Seleccione una opción"
             },
