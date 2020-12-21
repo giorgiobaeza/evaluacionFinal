@@ -1,11 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Empresa de Asesorías</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js">
+    </script>
 </head>
+
 <body>
-    
+    <div id="agrupar">
+        <header id="cabecera">
+            <h2>Administrar Asistentes</h2>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Identificador</th>
+                    <th>NOMBRE</th>
+                    <th>CORREO</th>
+                    <th>TELÉFONO</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Armando Paredes</td>
+                    <td>armando@gmail.com</td>
+                    <td>1234567</td>
+                    <td>
+                        <input type="button" value="eliminar" name="cheq" id="elim1" onclick="eliminaventa()">
+                        <input type="button" value="agregar" name="cheq" id="agr1" onclick="agregaventa()"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Adrián Droide</td>
+                    <td>adrian@gmail.com</td>
+                    <td>1234567</td>
+                    <td>
+                        <input type="button" value="eliminar" name="cheq" id="elim2" onclick="eliminaventa()">
+                        <input type="button" value="agregar" name="cheq" id="agr2" onclick="agregaventa()"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Alba Bosa</td>
+                    <td>alba@gmail.com</td>
+                    <td>1234567</td>
+                    <td>
+                        <input type="button" value="eliminar" name="cheq" id="elim3" onclick="eliminaventa()">
+                        <input type="button" value="agregar" name="cheq" id="agr3" onclick="agregaventa()"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Constanza Pallo</td>
+                    <td>constanza@gmail.com</td>
+                    <td>1234567</td>
+                    <td>
+                        <input type="button" value="eliminar" name="cheq" id="elim3" onclick="eliminaventa()">
+                        <input type="button" value="agregar" name="cheq" id="agr3" onclick="agregaventa()"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Diego Loso</td>
+                    <td>diego@gmail.com</td>
+                    <td>1234567</td>
+                    <td>
+                        <input type="button" value="eliminar" name="cheq" id="elim3" onclick="eliminaventa()">
+                        <input type="button" value="agregar" name="cheq" id="agr3" onclick="agregaventa()"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Elmer Kado</td>
+                    <td>elmer@gmail.com</td>
+                    <td>1234567</td>
+                    <td>
+                        <input type="button" value="eliminar" name="cheq" id="elim3" onclick="eliminaventa()">
+                        <input type="button" value="agregar" name="cheq" id="agr3" onclick="agregaventa()"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Elvis Cochuelo</td>
+                    <td>elvis@gmail.com</td>
+                    <td>1234567</td>
+                    <td>
+                        <input type="button" value="eliminar" name="cheq" id="elim3" onclick="eliminaventa()">
+                        <input type="button" value="agregar" name="cheq" id="agr3" onclick="agregaventa()"></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Norma Cita</td>
+                    <td>norma@gmail.com</td>
+                    <td>1234567</td>
+                    <td>
+                        <input type="button" value="eliminar" name="cheq" id="elim3" onclick="eliminaventa()">
+                        <input type="button" value="agregar" name="cheq" id="agr3" onclick="agregaventa()"></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Víctor Nillo</td>
+                    <td>victor@gmail.com</td>
+                    <td>1234567</td>
+                    <td>
+                        <input type="button" value="eliminar" name="cheq" id="elim3" onclick="eliminaventa()">
+                        <input type="button" value="agregar" name="cheq" id="agr3" onclick="agregaventa()"></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Zacarias Flores Del Campo</td>
+                    <td>zacarias@gmail.com</td>
+                    <td>1234567</td>
+                    <td>
+                        <input type="button" value="eliminar" name="cheq" id="elim3" onclick="eliminaventa()">
+                        <input type="button" value="agregar" name="cheq" id="agr3" onclick="agregaventa()"></td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr class="negrita">
+                    <th>Identificador</th>
+                    <th>NOMBRE</th>
+                    <th>CORREO</th>
+                    <th>TELÉFONO</th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+        <form action="">
+            <legend>
+                <table>
+                    <tr>
+                        <td><label>Información de la Capacitación</label></td>
+                        <td><select>
+                                <option value="default">seleccione...</option>
+                                <option>HORA 08:30, FECHA 18/11/2020, NOMBRE CLIENTE: Seguridad Lmtda</option>
+                                <option>HORA 11:30, FECHA 23/11/2020, NOMBRE CLIENTE: Seguridad Lmtda</option>
+                                <option>HORA 09:30, FECHA 05/12/2020, NOMBRE CLIENTE: Seguridad Lmtda</option>
+                                <option>HORA 11:30, FECHA 10/12/2020, NOMBRE CLIENTE: Seguridad Lmtda</option>
+                            </select></td>
+
+                    </tr>
+                </table>
+            </legend>
+
+        </form>
+
 </body>
+
 </html>
