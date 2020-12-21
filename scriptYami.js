@@ -1,51 +1,44 @@
 $(document).ready(function () {
-
+    //validaciones para formularios
     $.validator.addMethod("valueNotEquals", function (value, element, arg) {
         return arg !== value;
     }, "Value must not equal arg.")
-    $('#commentForm').validate({
+
+    $('#formNuevoAsist').validate({
         rules: {
             ident: {
-                required: {
-                    depends: function (elem) {
-                        return $("#ident").val() < 10000
-                    }
-                },
+                required: true,
                 number: true,
-                min: 0
-            }
-        },
-        nombre: {
-            required: true,
-            maxlength: 100
-        },
-
-        edad: {
-            required: {
-                depends: function (elem) {
-                    return $("#ident").val() < 150
-                }
+                max: 10000
             },
-            number: true,
-            min: 1
-        },
-        email: {
-            required: true,
-            email: true
-        },
-        telefono: {
-            required: true,
-            maxlength: 9
-        },
-        cap: "required",
-        cap: {
-            valueNotEquals: "default"
+            nombre: {
+                required: true,
+                maxlength: 100
+            },
+
+            edad: {
+                required: true,
+                number: true,
+                max: 150
+
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            telefono: {
+                required: true,
+                maxlength: 9
+            },
+            cap: {
+                valueNotEquals: "default"
+            }
         },
 
         messages: {
             ident: {
                 required: "Este es un campo obligatorio.",
-                number: "Identificador mayor a 0 y menor a 10000."
+                max: "Identificador mayor a 0 y menor a 10000."
             },
             nombre: {
                 required: "Este es un campo obligatorio.",
@@ -54,20 +47,22 @@ $(document).ready(function () {
 
             edad: {
                 required: "Este es un campo obligatorio.",
-                number: "Ingresar un número mayor a 0 y menor a 150"
+                min: "Ingresar un número mayor a 0 y menor a 150"
             },
             email: {
+                required: "Este es un campo obligatorio.",
                 email: "El formato del correo es este: abc@domain.tld"
             },
 
             telefono: {
                 required: "Este es un campo obligatorio.",
-                maxlength: "Formato telefono es: +569XXXXXXXX"
+                maxlength: "Dígitos entre 0 y 9"
             },
-            cap: "Este es un campo obligatorio.",
+
             cap: {
                 valueNotEquals: "Seleccione una opción"
             },
+
         }
     });
 
