@@ -9,10 +9,8 @@
 </head>
 
 <body>
-    <div id="agrupar">
         <header id="cabecera">
             <h2>Listado Chequeos</h2>
-        </header>
         <aside id="aside">
             <nav id="menu">
                 <ul>
@@ -48,9 +46,11 @@
                 </ul>
             </nav>
         </aside>
+    </header>
+
         <form>
-            <legend>
-                <table>
+            <fieldset class="cel- agrupar-t agrupar-e">
+                <table class="cel- tablaadm-t tablaadm-e">
 
                     <tr class="negrita">
                         <td>Id Chequeo</td>
@@ -104,13 +104,12 @@
                 </table>
 
 
-            </legend>
+            </fieldset>
         </form>
 
         <footer id="pie">
             Derechos Reservados G3 &copy; 2020
         </footer>
-    </div>
     <script type="text/javascript">
         function chequeo() {
             c1 = document.getElementById("chek1");
