@@ -1,11 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Empresa de Asesorías</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js">
+    </script>
+
+    <script src="scriptYami.js"></script>
 </head>
+
 <body>
-    
+    <div id="agrupar">
+        <header id="cabecera">
+            <h2>Administrar Asistentes</h2>
+        </header>
+        <aside id="aside">
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <blockquote><a href="contacto.html">Contacto</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="login.html">Login de Usuario</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="crearcapacitacion.html">Crear Capacitación</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="listarcapacitaciones.html">Listar Capacitaciones</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="crearusuario.html">Crear Usuario</a></blockquote>
+                    </li>
+
+                    <li>
+                        <blockquote><a href="listadovisitas.html">Listado Visitas</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="listadopago.html">Listado de Pagos</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="listadoasesorias.html">Listado de Asesorías</a></blockquote>
+                    </li>
+
+                </ul>
+            </nav>
+        </aside>
+        <form>
+            <legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NOMBRE</th>
+                            <th>CORREO</th>
+                            <th>TELÉFONO</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Armando Paredes</td>
+                            <td>armando@gmail.com</td>
+                            <td>1234567</td>
+                            <td>
+                                <input type="button" value="Eliminar" name="eliminar" id="elim1"
+                                    onclick="eliminaventa()">
+                                <input type="button" value="Agregar" name="agregar" id="agr1" onclick="agregaventa()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Adrián Droide</td>
+                            <td>adrian@gmail.com</td>
+                            <td>1234567</td>
+                            <td>
+                                <input type="button" value="Eliminar" name="eliminar" id="elim2"
+                                    onclick="eliminaventa()">
+                                <input type="button" value="Agregar" name="agregar" id="agr2" onclick="agregaventa()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Alba Bosa</td>
+                            <td>alba@gmail.com</td>
+                            <td>1234567</td>
+                            <td>
+                                <input type="button" value="Eliminar" name="eliminar" id="elim3"
+                                    onclick="eliminaventa()">
+                                <input type="button" value="Agregar" name="agregar" id="agr3" onclick="agregaventa()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Constanza Pallo</td>
+                            <td>constanza@gmail.com</td>
+                            <td>1234567</td>
+                            <td>
+                                <input type="button" value="Eliminar" name="eliminar" id="elim4"
+                                    onclick="eliminaventa()">
+                                <input type="button" value="Agregar" name="agregar" id="agr4" onclick="agregaventa()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Diego Loso</td>
+                            <td>diego@gmail.com</td>
+                            <td>1234567</td>
+                            <td>
+                                <input type="button" value="Eliminar" name="eliminar" id="elim5"
+                                    onclick="eliminaventa()">
+                                <input type="button" value="Agregar" name="agregar" id="agr5" onclick="agregaventa()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Elmer Kado</td>
+                            <td>elmer@gmail.com</td>
+                            <td>1234567</td>
+                            <td>
+                                <input type="button" value="Eliminar" name="eliminar" id="elim6"
+                                    onclick="eliminaventa()">
+                                <input type="button" value="Agregar" name="agregar" id="agr6" onclick="agregaventa()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Elvis Cochuelo</td>
+                            <td>elvis@gmail.com</td>
+                            <td>1234567</td>
+                            <td>
+                                <input type="button" value="Eliminar" name="eliminar" id="elim7"
+                                    onclick="eliminaventa()">
+                                <input type="button" value="Agregar" name="agregar" id="agr7" onclick="agregaventa()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Norma Cita</td>
+                            <td>norma@gmail.com</td>
+                            <td>1234567</td>
+                            <td>
+                                <input type="button" value="Eliminar" name="eliminar" id="elim8"
+                                    onclick="eliminaventa()">
+                                <input type="button" value="Agregar" name="agregar" id="agr8" onclick="agregaventa()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Víctor Nillo</td>
+                            <td>victor@gmail.com</td>
+                            <td>1234567</td>
+                            <td>
+                                <input type="button" value="Eliminar" name="eliminar" id="elim9"
+                                    onclick="eliminaventa()">
+                                <input type="button" value="Agregar" name="agregar" id="agr9" onclick="agregaventa()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Zacarias Flores Del Campo</td>
+                            <td>zacarias@gmail.com</td>
+                            <td>1234567</td>
+                            <td>
+                                <input type="button" value="Eliminar" name="eliminar" id="elim10"
+                                    onclick="eliminaventa()">
+                                <input type="button" value="Agregar" name="agregar" id="agr10" onclick="agregaventa()">
+                            </td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr class="negrita">
+                            <th>ID</th>
+                            <th>NOMBRE</th>
+                            <th>CORREO</th>
+                            <th>TELÉFONO</th>
+                            <th></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </legend>
+        </form>
+        <hr>
+        <br><br>
+        <h2>AGREGAR NUEVO ASISTENTE A LA CAPACITACIÓN</h2>
+        <form class="cmxform" id="formNuevoAsist" method="POST" action="#">
+            <legend>
+                <table>
+                    <tr>
+                        <td><label for="ident">IDENTIFICADOR </label></td>
+                        <td><input id="ident" type="number" name="ident" min="0" required /></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="nombre">NOMBRE COMPLETO</label></td>
+                        <td><input id="nombre" type="text" name="nombre" minlength="0" required /></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="edad">EDAD</label></td>
+                        <td><input id="edad" type="number" name="edad" min="0" required /></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="email">CORREO ELECTRÓNICO</label></td>
+                        <td><input id="email" type="email" name="email" required /></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="telefono">TELÉFONO </label></td>
+                        <td><input id="telefono" type="text" name="telefono" pattern="\x2b[0-9]+" size="20"
+                                placeholder="+569XXXXXXXX" required /></td>
+
+                    </tr>
+
+                    <tr>
+                        <td><label for="cap">INFORMACIÓN CAPACITACIÓN</label></td>
+                        <td><select id="cap" name="cap">
+                                <option value="default">seleccione...</option>
+                                <option>HORA: 08:30, FECHA: 18/11/2020, NOMBRE CLIENTE: Seguridad Lmtda</option>
+                                <option>HORA: 11:30, FECHA: 21/11/2020, NOMBRE CLIENTE: Construcciones Elba Lazo SPA
+                                </option>
+                                <option>HORA: 09:00, FECHA: 25/11/2020, NOMBRE CLIENTE: Unión Electricistas SPA</option>
+                                <option>HORA: 08:30, FECHA: 05/12/2020, NOMBRE CLIENTE: Limpieza y Aseo SPA</option>
+                                <option>HORA: 10:30, FECHA: 16/12/2020, NOMBRE CLIENTE: Seguridad Lmtda</option>
+                            </select></td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input class="submit" type="submit" id="validar" value="Validar" /></td>
+                    </tr>
+                </table>
+            </legend>
+
+        </form>
+        <footer id="pie">
+            Derechos Reservados &copy; 2020
+        </footer>
+    </div>
+
 </body>
+
 </html>

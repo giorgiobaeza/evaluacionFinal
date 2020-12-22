@@ -13,6 +13,41 @@
         <header id="cabecera">
             <h2>Listado Chequeos</h2>
         </header>
+        <aside id="aside">
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <blockquote><a href="contacto.html">Contacto</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="login.html">Login de Usuario</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="crearcapacitacion.html">Crear Capacitación</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="listarcapacitaciones.html">Listar Capacitaciones</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="administrarasistentes.html">Asistentes a Capacitaciones</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="crearusuario.html">Crear Usuario</a></blockquote>
+                    </li>
+
+                    <li>
+                        <blockquote><a href="listadovisitas.html">Listado Visitas</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="listadopago.html">Listado de Pagos</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="listadoasesorias.html">Listado de Asesorías</a></blockquote>
+                    </li>
+
+                </ul>
+            </nav>
+        </aside>
         <form>
             <legend>
                 <table>
@@ -58,26 +93,20 @@
                         <td>Extintores</td>
                         <td><input type="checkbox" name="checkbox" value="Extintores" id="chek7" /></td>
                     </tr>
-                    <tr >
-                        <td colspan="3" >
-                    <input type="button" class="boton" value="Chequeo" name="cheq" id="chek8" onclick="chequeo()" >
+                    <tr>
+                        <td colspan="3">
+                            <input type="button" class="boton" value="Chequeo" name="cheq" id="chek8"
+                                onclick="chequeo()">
 
-                <div id="chek9" class="lista" ></div>
-            </td>
-            </tr>
+                            <div id="chek9" class="lista"></div>
+                        </td>
+                    </tr>
                 </table>
-                
+
 
             </legend>
         </form>
 
-
-
-        <aside id="aside">
-
-            <blockquote><a href="index.html">Página de Inicio</a></blockquote>
-
-        </aside>
         <footer id="pie">
             Derechos Reservados G3 &copy; 2020
         </footer>
@@ -121,9 +150,9 @@
                 if (c7.checked) {
                     var text7 = "<li>Extintores</li>";
                 }
-                document.getElementById('chek9').innerHTML = 'Chequeos Seleccionados<ul>' + text1 + text2 + text3 + text4 + text5 + text6 + text7
-                    '</ul>';
-                
+                document.getElementById('chek9').innerHTML = 'Chequeos Seleccionados<ul>' + text1 + text2 + text3 +
+                    text4 + text5 + text6 + text7 ;
+
             } else
                 alert("Por favor seleccionar al menos un chequeo")
         }
