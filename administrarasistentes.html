@@ -16,11 +16,13 @@
 </head>
 
 <body>
-    <div id="agrupar">
+    
         <header id="cabecera">
             <h2>Administrar Asistentes</h2>
         </header>
-        <aside id="aside">
+        <div  class="cel- agrupar-t agrupar-e">
+        <fieldset>
+        <aside id="a    side">
             <nav id="menu">
                 <ul>
                     <li>
@@ -53,8 +55,8 @@
             </nav>
         </aside>
         <form>
-            <legend>
-                <table>
+            
+                <table class="cel- tablaadm-t tablaadm-e">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -64,7 +66,7 @@
                             <th></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody >
                         <tr>
                             <td>1</td>
                             <td>Armando Paredes</td>
@@ -148,8 +150,7 @@
                             <td>norma@gmail.com</td>
                             <td>1234567</td>
                             <td>
-                                <input type="button" value="Eliminar" name="eliminar" id="elim8"
-                                    onclick="eliminaventa()">
+                                <input type="button" value="Eliminar" name="eliminar" id="elim8" onclick="eliminaventa()">
                                 <input type="button" value="Agregar" name="agregar" id="agr8" onclick="agregaventa()">
                             </td>
                         </tr>
@@ -187,14 +188,11 @@
                         </tr>
                     </tfoot>
                 </table>
-            </legend>
+            
         </form>
-        <hr>
-        <br><br>
-        <h2>AGREGAR NUEVO ASISTENTE A LA CAPACITACIÓN</h2>
+        <h2 class="cel-2 subtitulo-t subtitulo-t">AGREGAR NUEVO ASISTENTE A LA CAPACITACIÓN</h2>
         <form class="cmxform" id="formNuevoAsist" method="POST" action="#">
-            <legend>
-                <table>
+                <table class="cel- tablaadm-t tablaadm-e">
                     <tr>
                         <td><label for="ident">IDENTIFICADOR </label></td>
                         <td><input id="ident" type="number" name="ident" min="0" required /></td>
@@ -227,8 +225,7 @@
                         <td><select id="cap" name="cap">
                                 <option value="default">seleccione...</option>
                                 <option>HORA: 08:30, FECHA: 18/11/2020, NOMBRE CLIENTE: Seguridad Lmtda</option>
-                                <option>HORA: 11:30, FECHA: 21/11/2020, NOMBRE CLIENTE: Construcciones Elba Lazo SPA
-                                </option>
+                                <option>HORA: 11:30, FECHA: 21/11/2020, NOMBRE CLIENTE: Construcciones Elba Lazo SPA</option>
                                 <option>HORA: 09:00, FECHA: 25/11/2020, NOMBRE CLIENTE: Unión Electricistas SPA</option>
                                 <option>HORA: 08:30, FECHA: 05/12/2020, NOMBRE CLIENTE: Limpieza y Aseo SPA</option>
                                 <option>HORA: 10:30, FECHA: 16/12/2020, NOMBRE CLIENTE: Seguridad Lmtda</option>
@@ -239,13 +236,16 @@
                         <td colspan="2"><input class="submit" type="submit" id="validar" value="Validar" /></td>
                     </tr>
                 </table>
-            </legend>
+            
 
         </form>
+    </fieldset>
+    </div>   
+    
         <footer id="pie">
             Derechos Reservados &copy; 2020
         </footer>
-    </div>
+    
 
 </body>
 
