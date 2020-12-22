@@ -68,3 +68,19 @@ $(document).ready(function () {
 
 
 });
+
+//JQUERY para el menú
+$(document).ready(function(){
+    
+    $(window).scroll(function(){
+        
+        if($(window).scrollTop() > 100){
+            
+            $('header').addClass('header2');
+        }else{
+            $('header').removeClass('header2');
+        }
+        
+    })
+    
+})

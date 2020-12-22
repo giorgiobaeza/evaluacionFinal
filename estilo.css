@@ -9,6 +9,10 @@ th {
 
 }
 
+.actdis{
+    display:none;
+}
+
 .chart-container {
     width: 200px;
     height: 200px
@@ -39,7 +43,8 @@ th {
 }
 
 h1 {
-    color: white;
+    color: rgb(241, 241, 241);
+    text-shadow: black 0.1em 0.1em 0.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: underline;
     text-align: center;
@@ -59,10 +64,12 @@ h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: underline;
     text-align: center;
+    font-size: 20px;
 }
 
 p {
     color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
     text-align: justify;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
@@ -71,7 +78,7 @@ p {
 }
 
 th {
-    color: #022D36;
+    color: rgb(0, 185, 185);
 }
 
 td {
@@ -138,13 +145,7 @@ a {
 
 }
 
-#seccion {
-    background-color: rgb(65, 0, 61, 0.2);
-    float: left;
-    width: 100%;
-    margin: auto;
 
-}
 
 #aside {
     background-color: #022D36;
@@ -170,16 +171,7 @@ a {
 
 }
 
-.boton {
-    background-color: #022D36;
-    color: #82EEFD;
-    clear: both;
-    text-align: center;
-    font-size: 20px;
-    width: 0 auto;
-    align-content: center;
-    border-top: 2px solid #999999;
-}
+
 
 #menu ul {
     margin: 0;
@@ -188,29 +180,29 @@ a {
     display: flex;
 }
 
-#menu li {
+/*#menu li {
     text-align: center;
     flex-grow: 1;
-}
+}*/
 
 #menu li:hover {
     background: rgba(0, 0, 0, 0.3);
 }
 
-#menu li {
+/*#menu li {
     display: inline-block;
     list-style: none;
     padding: 0px;
     font: bold 14px verdana, sans-serif;
     width: 100%;
     float: none;
-}
+}*/
 /*estilos celulares*/
     [class*="cel-"] {
         width: 95%;
         padding: 10px 0px;
         margin-top: 10px;
-        font-size: 12px;
+        font-size: 14px;
     }
     .cel-2{
         width: 100%;
@@ -220,20 +212,34 @@ a {
             display: inline-block;  
             font-size: 18px;
     }
+    .cel-3{
+        display: inline-block;
+        list-style: none;
+        padding: 0px;
+        font: bold 14px verdana, sans-serif;
+        width: 100%;
+        float: none;
+    }
 /*estilos para tablets*/
     @media only screen and (min-width:600px) {
 
-        .section-t{width: 450px;}
+        .texto-t{
+            font-size: 20px;
+        }
         .agrupar-t{
             max-width: 100%;
             text-align: left;
         }
         .tablas-t{
             width: 500px;
-            font-size: 24px;
+            font-size: 20px;
         }
         .tablaadm-t{
             width: 800px;
+            font-size: 20px;
+        }
+        .tablausr-t{
+            width: 650px;
             font-size: 20px;
         }
         .subtitulo-t{
@@ -241,9 +247,16 @@ a {
             background-color: #022D36;
             margin: 0px;
             display: inline-block;  
-            font-size: 24px;
+            font-size: 20px;
         }
-        .menuli-t{width: 450px;}
+        .menuli-t{
+            display: inline-block;
+            list-style: none;
+            padding: 0px;
+            font: bold 14px verdana, sans-serif;
+            width: 100%;
+            float: none;
+        }
         .menuul-t {
             width: 40%;
         }
@@ -253,7 +266,9 @@ a {
     }
 /*estilos de escritorio*/ 
     @media only screen and (min-width:1000px) {
-        .section-e{width: 960px;}
+        .texto-e{
+            font-size: 20px;
+        }
         .agrupar-e{
             width: 70%;
             text-align: left;
@@ -269,8 +284,19 @@ a {
             width: 1000px;
             font-size: 24px;
         }
+        .tablausr-e{
+            width: 800px;
+            font-size: 24px;
+        }
         .subtitulo-e{width: 960px;}
-        .menuli-e{width: 960px;}
+        .menuli-e{
+            display: inline-block;
+            list-style: none;
+            padding: 0px;
+            font: bold 14px verdana, sans-serif;
+            width: 100%;
+            float: none;
+        }
         .menuul-e {
             width: auto;
         }
