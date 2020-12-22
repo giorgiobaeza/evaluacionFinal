@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar Accidente</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="scriptX.js"></script>
+
+</head>
+
+<body>
+   
+    <div id="agrupar" >
+        <header id="cabecera">
+            <h2>
+                Ingresar Accidente
+            </h2>
+        </header>
+       
+        <form class="cmxform" id="accForm" method="get" action="#">
+            <fieldset>
+                <table>
+
+                    <tr>
+                        <td>ID del Accidente</td>
+                        <td><input type="text" name="ID_Accidente" id="ID_Accidente"/> </td>
+                    </tr>
+
+                    <tr>
+                        <td>Fecha del Accidente</td>
+                        <td><input type="date" name="fecha" id="accfecha"/> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Hora del Accidente</td>
+                        <td><input type="time" name="hora" id="acchora"/> </td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Lugar del Accidente</td>
+                        <td><input type="text" name="lugar" id="acclugar"/> </td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Origen</td>    
+                        <td><input type="text" name="origen" id="accorigen"/> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="cliente">Cliente</label></td>
+                        <td><select id="cliente" name="cliente">
+                            <option value="default">seleccione...</option>
+                            &nbsp<option value="TrapeciosPitillaSA" >Trapecios Pitilla SA.</option>
+                            &nbsp<option value="VidriosTiritonLtda" >Vidrios Tiritón Ltda.</option>
+                            &nbsp<option value="CuchillosElEstoqueSA" >Cuchillos El Estoque SA.</option>
+                            &nbsp<option value="BusesCrashDummieSA" >Buses Crash-Dummie SA.</option>
+                            &nbsp<option value="AndamiosPataCojaSPA" >Andamios PataCoja SPA.</option>
+                        </select></td>
+                    </tr>
+                  
+                    <tr>
+                        <td>Consecuencias</td>
+                        <td><textarea name="consecuencias" id="accconsecuencias" placeholder="">
+                        </textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="submit" id="validaracc" value="Validar Datos"></td>
+                    </tr>
+
+                </table>
+            </fieldset>    
+        </form>
+        
+
+
+        <aside id="aside">
+            <blockquote><a href="index.html">Volver a la página de Inicio</a></blockquote>
+        </aside>
+        <footer id="pie">
+            Derechos Reservados &copy; 2020
+        </footer>
+
+    </div> 
+    
+
+
+</body>
+
+</html>
