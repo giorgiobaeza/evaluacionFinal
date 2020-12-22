@@ -107,9 +107,7 @@ canvas {
 }
 
 fieldset {
-    max-width: 1000px;
     background-color: rgb(65, 0, 61, 0.25);
-    margin-right: auto;
 }
 
 legend {
