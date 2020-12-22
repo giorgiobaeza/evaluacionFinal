@@ -1,4 +1,7 @@
+body{
+    background-color: #008d7a;
 
+}
 
 th {
     color: rgb(0, 165, 165); 
@@ -195,9 +198,17 @@ a {
 /*estilos celulares*/
     [class*="cel-"] {
         width: 95%;
-        padding: 10px;
+        padding: 10px 0px;
         margin-top: 10px;
         font-size: 12px;
+    }
+    .cel-2{
+        width: 100%;
+            background-color: #022D36;
+            margin: 0px;
+            padding: 10px 0px;
+            display: inline-block;  
+            font-size: 18px;
     }
 /*estilos para tablets*/
     @media only screen and (min-width:600px) {
@@ -208,11 +219,20 @@ a {
             text-align: left;
         }
         .tablas-t{
-            width: 100%;
+            width: 500px;
             font-size: 24px;
         }
-        .columna-t{width: 450px;}
-        .pie-t{width: 450px;}
+        .tablaadm-t{
+            width: 800px;
+            font-size: 20px;
+        }
+        .subtitulo-t{
+            width: 100%;
+            background-color: #022D36;
+            margin: 0px;
+            display: inline-block;  
+            font-size: 24px;
+        }
         .menuli-t{width: 450px;}
         .menuul-t {
             width: 40%;
@@ -225,18 +245,21 @@ a {
     @media only screen and (min-width:1000px) {
         .section-e{width: 960px;}
         .agrupar-e{
-            width: 960px;
+            width: 70%;
             text-align: left;
             margin-right:auto;
             margin-left:auto;
             font-size: 24px;
         }
         .tablas-e{
-            width: 960px;
+            width: 600px;
             font-size: 24px;
         }
-        .columna-e{width: 960px;}
-        .pie-e{width: 960px;}
+        .tablaadm-e{
+            width: 1000px;
+            font-size: 24px;
+        }
+        .subtitulo-e{width: 960px;}
         .menuli-e{width: 960px;}
         .menuul-e {
             width: auto;
