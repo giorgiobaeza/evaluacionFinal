@@ -107,9 +107,7 @@ canvas {
 }
 
 fieldset {
-    max-width: 1000px;
     background-color: rgb(65, 0, 61, 0.25);
-    margin-right: auto;
 }
 
 legend {
@@ -197,9 +195,10 @@ a {
     width: 100%;
     float: none;
 }*/
+
 /*estilos celulares*/
     [class*="cel-"] {
-        width: 95%;
+        width: 100%;
         padding: 10px 0px;
         margin-top: 10px;
         font-size: 14px;
@@ -267,7 +266,7 @@ a {
 /*estilos de escritorio*/ 
     @media only screen and (min-width:1000px) {
         .texto-e{
-            font-size: 20px;
+            font-size: 24px;
         }
         .agrupar-e{
             width: 70%;
