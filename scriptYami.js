@@ -29,7 +29,7 @@ $(document).ready(function () {
             telefono: {
                 required: true,
                 minlength: 12
-                
+
             },
             cap: {
                 valueNotEquals: "default"

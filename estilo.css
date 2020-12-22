@@ -3,17 +3,25 @@ body {
 
 }
 
-th {
-    color: #022D36;
-
-}
-
 .chart-container {
     width: 200px;
     height: 200px
 }
 
+.estilo1 {
+    background-color:rgb(255, 164, 164) ;
+    border-color: red;
+}
 
+.estilo2 {
+    background-color:rgb(164, 165, 255) ;
+    border-color: rgb(0, 4, 255);
+}
+
+.estilo3 {
+    background-color:rgb(164, 255, 187) ;
+    border-color: rgb(0, 255, 55);
+}
 .error {
     background-color: rgb(255, 164, 164);
     border-color: red;
@@ -22,25 +30,6 @@ th {
 .validado {
     background-color: #b6f3ff;
     border-color: #009013
-}
-
-.actdis {
-    display: none;
-}
-
-.estilo1 {
-    background-color: rgb(255, 164, 164);
-    border-color: red;
-}
-
-.estilo2 {
-    background-color: rgb(164, 165, 255);
-    border-color: rgb(0, 4, 255);
-}
-
-.estilo3 {
-    background-color: rgb(164, 255, 187);
-    border-color: rgb(0, 255, 55);
 }
 
 h1 {
@@ -73,6 +62,10 @@ p {
     text-align: center;
 }
 
+th {
+    color: #022D36;
+}
+
 td {
     color: #022D36;
     text-align: justify;
@@ -93,7 +86,7 @@ input {
 }
 
 canvas {
-    background-color: #c9e8ee;
+    background-color: rgba(19, 123, 241, 0.2);
 }
 
 fieldset {
@@ -120,7 +113,8 @@ a {
 
 #agrupar {
 
-    width: 960px;
+    width: 100%;
+    height: 100%;
     margin: 15px auto;
     text-align: left;
 }
@@ -130,6 +124,7 @@ a {
     border: 1px solid #999999;
     padding: 20px;
     width: 100%;
+    height: 100%;
 
 }
 
