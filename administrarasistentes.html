@@ -16,12 +16,14 @@
 </head>
 
 <body>
-    <div id="agrupar">
+    
         <header id="cabecera">
             <h2>Administrar Asistentes</h2>
         </header>
+        <div  class="cel- agrupar-t agrupar-e">
+        <fieldset>
         <form>
-            <legend>
+            
                 <table>
                     <thead>
                         <tr>
@@ -116,8 +118,7 @@
                             <td>norma@gmail.com</td>
                             <td>1234567</td>
                             <td>
-                                <input type="button" value="Eliminar" name="eliminar" id="elim8"
-                                    onclick="eliminaventa()">
+                                <input type="button" value="Eliminar" name="eliminar" id="elim8" onclick="eliminaventa()">
                                 <input type="button" value="Agregar" name="agregar" id="agr8" onclick="agregaventa()">
                             </td>
                         </tr>
@@ -155,13 +156,10 @@
                         </tr>
                     </tfoot>
                 </table>
-            </legend>
+            
         </form>
-        <hr>
-        <br><br>
         <h2>AGREGAR NUEVO ASISTENTE A LA CAPACITACIÓN</h2>
         <form class="cmxform" id="formNuevoAsist" method="POST" action="#">
-            <legend>
                 <table>
                     <tr>
                         <td><label for="ident">IDENTIFICADOR </label></td>
@@ -207,10 +205,12 @@
                         <td colspan="2"><input class="submit" type="submit" id="validar" value="Validar" /></td>
                     </tr>
                 </table>
-            </legend>
+            
 
         </form>
-    </div>
+    </fieldset>
+    </div>   
+    
 </body>
 
 </html>

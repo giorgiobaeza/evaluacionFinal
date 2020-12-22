@@ -1,10 +1,8 @@
-body {
-    background-image: url(https://coordinatecnica.com/wp-content/uploads/2014/10/fondo-1-1920.jpg);
 
-}
 
 th {
-    color: #022D36;
+    color: rgb(0, 165, 165); 
+    text-shadow: black 0.1em 0.1em 0.2em
 
 }
 
@@ -51,14 +49,16 @@ h1 {
 }
 
 h2 {
-    color: #82EEFD;
+    color: rgb(0, 165, 165); 
+    text-shadow: black 0.1em 0.1em 0.2em;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
     text-align: center;
 }
 
 h3 {
-    color: #022D36;
+    color: rgb(0, 165, 165); 
+    text-shadow: black 0.1em 0.1em 0.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: underline;
     text-align: center;
@@ -77,9 +77,10 @@ td {
     color: #022D36;
     text-align: justify;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 24px;
     border: 1px solid #999999;
     align-content: center;
+    color: white; 
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 table {
@@ -97,9 +98,7 @@ canvas {
 }
 
 fieldset {
-    max-width: 1000px;
-    background-color: rgb(65, 0, 61, 0.2);
-    margin-right: auto;
+    background-color: rgb(65, 0, 61, 0.2);    
 }
 
 legend {
@@ -116,13 +115,6 @@ a {
     color: #82EEFD;
     font-family: Arial, Helvetica, sans-serif;
 
-}
-
-#agrupar {
-
-    width: 960px;
-    margin: 15px auto;
-    text-align: left;
 }
 
 #cabecera {
@@ -200,48 +192,56 @@ a {
     width: 100%;
     float: none;
 }
-
-@media (min-width:1024px) {
-
-    #section,
-    #agrupar,
-    #cabecera,
-    #columna,
-    #pie,
-    #menu li,
-    #menu ul {
-        width: auto;
-
+/*estilos celulares*/
+    [class*="cel-"] {
+        width: 95%;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 12px;
     }
+/*estilos para tablets*/
+    @media only screen and (min-width:600px) {
 
-}
-
-@media (min-width:480px) {
-
-    #section,
-    #agrupar,
-    #cabecera,
-    #columna,
-    #pie,
-    #menu li,
-    #menu ul {
-        width: 40%;
-
+        .section-t{width: 450px;}
+        .agrupar-t{
+            max-width: 100%;
+            text-align: left;
+        }
+        .tablas-t{
+            width: 100%;
+            font-size: 24px;
+        }
+        .columna-t{width: 450px;}
+        .pie-t{width: 450px;}
+        .menuli-t{width: 450px;}
+        .menuul-t {
+            width: 40%;
+        }
+        body {
+            background-image: url(https://coordinatecnica.com/wp-content/uploads/2014/10/fondo-1-1920.jpg);
+        }
     }
-
-}
-
-@media (min-width:600px) {
-
-    #section,
-    #agrupar,
-    #cabecera,
-    #columna,
-    #pie,
-    #menu li,
-    #menu ul {
-        width: auto;
-
+/*estilos de escritorio*/ 
+    @media only screen and (min-width:1000px) {
+        .section-e{width: 960px;}
+        .agrupar-e{
+            width: 960px;
+            text-align: left;
+            margin-right:auto;
+            margin-left:auto;
+            font-size: 24px;
+        }
+        .tablas-e{
+            width: 960px;
+            font-size: 24px;
+        }
+        .columna-e{width: 960px;}
+        .pie-e{width: 960px;}
+        .menuli-e{width: 960px;}
+        .menuul-e {
+            width: auto;
+        }
+        body {
+            background-image: url(https://coordinatecnica.com/wp-content/uploads/2014/10/fondo-1-1920.jpg);
+        }
     }
-
-}
