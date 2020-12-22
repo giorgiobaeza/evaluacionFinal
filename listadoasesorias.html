@@ -6,54 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Listado de Asesorías</title>
   <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="estilosYami.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scriptYami.js"></script>
 
 </head>
 
 <body>
-    <header id="cabecera">
-      <h2>Lista de asesorías</h2>
-    <aside id="aside">
-      <nav id="menu">
-        <ul>
-          <li>
-              <blockquote><a href="contacto.html">CONTACTO</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="login.html">INGRESO</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="crearcapacitacion.html">CREAR CAPACITACIONES</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="listarcapacitaciones.html">LISTAR CAPACITACIONES</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="administrarasistentes.html">ASISTENTES A CAPACITACIONES</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="crearusuario.html">CREAR USUARIO</a></blockquote>
-          </li>
+  <header id="seccion">
+    <div class="content-menu"></div>
+    <input type="checkbox" id="check">
+    <label class="icon-menu" for="check"><img src="iconos/icono-menu.png" alt="" class="icon-menu" for="check"></label>
 
-          <li>
-              <blockquote><a href="listadovisitas.html">LISTADO VISITAS</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="listadopago.html">LISTADO PAGO</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="listadoasesorias.html">LISTADO ASESORÍAS</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="reportes.html">REPORTES</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="listadoaccidentes.html">LISTADO ACCIDENTES</a></blockquote>
-          </li>
+    <nav class="menu">
+      <ul>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html">Ingreso</a></li>
+        <li><a href="crearusuario.html">Crear Usuario</a></li>
+        <li><a href="crearcapacitacion.html">Crear Capacitaciones</a></li>
+        <li><a href="listarcapacitaciones.html">Listar Capacitaciones</a></li>
+        <li><a href="administrarasistentes.html">Asistentes Capacitaciones</a></li>
+        <li><a href="listadovisitas.html">Listado Visitas</a></li>
+        <li><a href="listadopago.html">Listado Pago</a></li>
+        <li><a href="listadoasesorias.html">Listado Asesorías</a></li>
+        <li><a href="listadoaccidentes.html">Listado Accidentes</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
 
       </ul>
-      </nav>
-    </aside>
+    </nav>
+    </div>
   </header>
   <fieldset class="cel- agrupar-t agrupar-e">
     <form>
@@ -130,8 +113,8 @@
       </tr>
     </table>
 
-    </fieldset>
-    <footer id="pie">Derechos Reservados G3 &copy; 2020</footer>
+  </fieldset>
+  <footer id="pie">Derechos Reservados G3 &copy; 2020</footer>
   <script src="script.js"></script>
 </body>
 

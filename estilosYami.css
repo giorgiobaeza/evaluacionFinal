@@ -1,51 +1,75 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
-
-*{
+* {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-header{
+header {
     width: 100%;
     height: 150px;
-    background: rgb(255, 152, 0);
+    padding: 20px;
+    background-color: #022D36;
+    text-align: center;
 }
 
-header:hover{
-    background: rgb(255, 152, 0);
+main h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+main p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header:hover {
+
     -webkit-transition: all 300ms;
     transition: all 300ms;
 }
 
-.content-menu{
+.content-menu {
     width: 90%;
     max-width: 1000px;
     margin: auto;
 }
 
-.content-menu img{
+.content-menu img {
     width: 100px;
     display: block;
     margin: auto;
     padding-top: 10px;
 }
 
-.content-menu h2{
+
+#check {
     display: none;
 }
 
-#check{
-    display: none;
+.seccion {
+    background-color: #022D36;
+    border: 1px solid #999999;
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+
 }
 
-.menu{
+.menu {
     width: 100%;
     margin-top: 20px;
 }
 
-.menu ul{
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -54,120 +78,91 @@ header:hover{
     justify-content: center;
 }
 
-.menu ul li{
+.menu ul li {
     list-style: none;
 }
 
-.menu ul li a{
+.menu ul li a {
     padding: 12px;
     text-decoration: none;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font: verdana, sans-serif;
+    flex-grow: 1;
 }
 
-.menu ul li a:hover{
-    background: rgba(0,0,0,0.1);
-    -webkit-box-shadow: 0px 5px 0px 0px black;
-    box-shadow: 0px 5px 0px 0px black;
-    -webkit-transition: all 500ms;
-    transition: all 500ms;
+.menu ul li a:hover {
+    background: rgba(0, 0, 0, 0.3);
+    flex-grow: 1;
 }
 
-.header2{
+
+.header2 {
     position: fixed;
     top: -100px;
     background: rgba(255, 152, 0, 0.8);
-    
+
 }
 
-.icon-menu{
+.icon-menu img {
     display: none;
 }
 
-body{
-    background: #3d4866;
+body {
+    background-image: url(https://coordinatecnica.com/wp-content/uploads/2014/10/fondo-1-1920.jpg);
 }
 
-main{
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    background: white;
-    padding: 10px;
-    -webkit-box-shadow: 0px 0px 20px -2px black;
-    box-shadow: 0px 0px 20px -2px black;
-    margin-top: 20px;
+a {
+    color: #82EEFD;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
-main img{
-    width: 100%;
-    
-}
+@media screen and (max-width: 768px) {
 
-main h2{
-    font-size: 30px;
-    margin-top: 10px;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-main p{
-    margin-top: 10px;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-}
-
-@media screen and (max-width: 768px){
-    
-    header{
+    header {
         position: fixed;
         top: 0;
         height: 60px;
     }
-    
-    .header2{
+
+    .header2 {
         position: fixed;
         top: 0px;
         height: 60px;
-    
+
     }
-    
-    main{
-        margin-top: 80px;
-    }
-    
-    .content-menu img{
+
+    .icon-menu img {
         display: none;
     }
-    
-    .icon-menu{
+
+    .icon-menu img {
         display: block;
         position: fixed;
         right: 10px;
         top: 10px;
         padding: 5px;
-        font-size: 26px;
+        font-size: 5px;
         -webkit-transition: all 300ms;
         transition: all 300ms;
+        width: 30px;
+        height: 30px;
+        background-color: #82EEFD;
+        ;
+
     }
-    .icon-menu:hover{
-        background: rgba(0,0,0,0.3);
+
+    .icon-menu:hover img {
+        background: rgba(0, 0, 0, 0.3);
         color: white;
         border-radius: 5px;
         -webkit-transition: all 300ms;
         transition: all 300ms;
         cursor: pointer;
     }
-    .content-menu h2{
-        display: block;
-        position: absolute;
-        top: 15px;
-        font-family: 'Roboto', sans-serif;
-        color: white;
-    }
-    
-    
-    .menu{
+
+
+    .menu {
         width: 400px;
         position: absolute;
         background: white;
@@ -176,27 +171,29 @@ main p{
         top: 40px;
         -webkit-transition: all 100ms;
         transition: all 100ms;
-        
+
     }
-    
-    .menu ul{
+
+    .menu ul {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
     }
-    
-    .menu ul li{
+
+    .menu ul li {
         padding: 5px;
     }
-    .menu ul li a{
+
+    .menu ul li a {
         color: black;
-        display: block;        
+        display: block;
+
     }
-    
-    #check:checked ~ .menu{
-       left: 0px; 
-        -webkit-transition: all 300ms; 
+
+    #check:checked~.menu {
+        left: 0px;
+        -webkit-transition: all 300ms;
         transition: all 300ms;
     }
 }

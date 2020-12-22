@@ -6,108 +6,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Listado de pago</title>
   <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="estilosYami.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="scriptYami.js"></script>
   <script src="script.js"></script>
 </head>
 
 <body>
-    <header id="cabecera">
-      <h2>listado de Pago</h2>
-    <aside id="aside">
-      <nav id="menu">
-        <ul>
-          <li>
-              <blockquote><a href="contacto.html">CONTACTO</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="login.html">INGRESO</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="crearcapacitacion.html">CREAR CAPACITACIONES</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="listarcapacitaciones.html">LISTAR CAPACITACIONES</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="administrarasistentes.html">ASISTENTES A CAPACITACIONES</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="crearusuario.html">CREAR USUARIO</a></blockquote>
-          </li>
+  <header id="seccion">
+    <div class="content-menu"></div>
+    <input type="checkbox" id="check">
+    <label class="icon-menu" for="check"><img src="iconos/icono-menu.png" alt="" class="icon-menu" for="check"></label>
 
-          <li>
-              <blockquote><a href="listadovisitas.html">LISTADO VISITAS</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="listadopago.html">LISTADO PAGO</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="listadoasesorias.html">LISTADO ASESORÍAS</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="reportes.html">REPORTES</a></blockquote>
-          </li>
-          <li>
-              <blockquote><a href="listadoaccidentes.html">LISTADO ACCIDENTES</a></blockquote>
-          </li>
+    <nav class="menu">
+      <ul>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html">Ingreso</a></li>
+        <li><a href="crearusuario.html">Crear Usuario</a></li>
+        <li><a href="crearcapacitacion.html">Crear Capacitaciones</a></li>
+        <li><a href="listarcapacitaciones.html">Listar Capacitaciones</a></li>
+        <li><a href="administrarasistentes.html">Asistentes Capacitaciones</a></li>
+        <li><a href="listadovisitas.html">Listado Visitas</a></li>
+        <li><a href="listadopago.html">Listado Pago</a></li>
+        <li><a href="listadoasesorias.html">Listado Asesorías</a></li>
+        <li><a href="listadoaccidentes.html">Listado Accidentes</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
 
       </ul>
-      </nav>
-    </aside>
+    </nav>
+    </div>
   </header>
 
-    <form>
-      <fieldset class="cel- agrupar-t agrupar-e">
-        <table class="cel- tablaadm-t tablaadm-e">
-          <tr>
+  <form>
+    <fieldset class="cel- agrupar-t agrupar-e">
+      <table class="cel- tablaadm-t tablaadm-e">
+        <tr>
 
-          </tr>
+        </tr>
 
-          <tr class="negrita">
-            <td>Id Pago</td>
-            <td>Mes</td>
-            <td>Año</td>
-            <td>Rut Cliente</td>
-            <td>Nombre de Cliente</td>
+        <tr class="negrita">
+          <td>Id Pago</td>
+          <td>Mes</td>
+          <td>Año</td>
+          <td>Rut Cliente</td>
+          <td>Nombre de Cliente</td>
 
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Junio</td>
-            <td>2020</td>
-            <td>86555555-6</td>
-            <td>Henrique Roque</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Junio</td>
+          <td>2020</td>
+          <td>86555555-6</td>
+          <td>Henrique Roque</td>
 
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Abril</td>
-            <td>2020</td>
-            <td>87999999-7</td>
-            <td>Jimena Mena</td>
-
-
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Agosto</td>
-            <td>2020</td>
-            <td>89888888-9</td>
-            <td>Vera Paredes</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Abril</td>
+          <td>2020</td>
+          <td>87999999-7</td>
+          <td>Jimena Mena</td>
 
 
-          </tr>
-          <tr>
-            <td colspan="5">
-              <input type="button" class="boton" value="Crear Pagos" name="crearpagos" id="crearpagosbtn"
-                onclick="location.href='crearpago.html'" />
-              <div id="chek9" class="lista"></div>
-            </td>
-          </tr>
-        </table>
-      </fieldset>
-    </form>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Agosto</td>
+          <td>2020</td>
+          <td>89888888-9</td>
+          <td>Vera Paredes</td>
 
-    <footer id="pie">Derechos Reservados G3 &copy; 2020</footer>
+
+        </tr>
+        <tr>
+          <td colspan="5">
+            <input type="button" class="boton" value="Crear Pagos" name="crearpagos" id="crearpagosbtn"
+              onclick="location.href='crearpago.html'" />
+            <div id="chek9" class="lista"></div>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+
+  <footer id="pie">Derechos Reservados G3 &copy; 2020</footer>
 
 </body>
 
