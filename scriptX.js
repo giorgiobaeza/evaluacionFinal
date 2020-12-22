@@ -8,71 +8,74 @@ $(document).ready(function(){
     $('#accForm').validate({
         rules: {
            
-            Id_Accidente: {
+            ID_Accidente: {
                 required: true,
                 digits: true,
                 max: 10000,
                 min: 1
             },                
                        
-            accfecha: "required",
-            acchora: "required",
+            fecha: "required",
+            hora: "required",
 
-            acclugar:  {
+            lugar:  {
                 required: true,
                 minlength: 1,
                 maxlength: 150
             },
 
-            accorigen:  {
+            origen:  {
                 required: true,
                 minlength: 1,
-                maxlength: 100,
+                maxlength: 100
             },
 
 
-            cliente: "required",
-
-            accconsecuencias: {
+            cliente: {
+                valueNotEquals: "default"
+            },
+         
+            
+            consecuencias: {
                 minlength: 1,
-                maxlength: 100,
+                maxlength: 100
             },
             
            
         },
 
         messages: {
-            Id_Accidente: {
+            ID_Accidente: {
                 required: "Este es un campo obligatorio.",
                 minlength: "Este es un campo obligatorio.",
-                maxlength: "Excede numero máximo de caracteres.",
+                maxlength: "Excede numero máximo de caracteres."
             },
 
-            accfecha: {
-                required: "Este es un campo obligatorio.",
+            fecha: {
+                required: "Este es un campo obligatorio."
             },    
             
-            acchora: {
-                required: "Este es un campo obligatorio.",
+            hora: {
+                required: "Este es un campo obligatorio."
             },    
            
-            acclugar:  {
+            lugar:  {
                 required: "Este es un campo obligatorio.",
                 minlength: "Este es un campo obligatorio.",
-                maxlength: "Excede numero máximo de caracteres.",
+                maxlength: "Excede numero máximo de caracteres."
             },
 
-            accorigen:  {
+            origen:  {
                 required: "Este es un campo obligatorio.",
                 minlength: "Este es un campo obligatorio.",
-                maxlength: "Excede numero máximo de caracteres.",
+                maxlength: "Excede numero máximo de caracteres."
             },
 
 
             cliente: "Este es un campo obligatorio.",
 
-            accconsecuencias: {
-                maxlength: "Excede numero máximo de caracteres.",
+            consecuencias: {
+                maxlength: "Excede numero máximo de caracteres."
             },
 
         }
