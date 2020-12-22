@@ -1,5 +1,7 @@
 Sistema de Asesorías En Prevención de Riesgos
 *********************************************
+
+
 Desarrolladores:
     - Jorge Baeza
     - Yamilet Ancan
@@ -15,10 +17,9 @@ Proyecto:
     procesos de gestión, planificacion, control,  seguridad, y disponibilidad de 
     información para la empresa y sus clientes. 
     
-
-
     El proyecto, aún en desarrollo, permite adminsitrar los principales procesos que 
     se llevan a cabo día a día en la empresa.
+    
     Para ello se han creado las siguientes interfaces gráficas:
 
     - index.html: Página de inicio del portal con información relevante del proyecto.

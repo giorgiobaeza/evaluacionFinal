@@ -18,76 +18,98 @@
 </head>
 
 <body>
-    <header id="seccion">
-        <div class="content-menu"></div>
-        <input type="checkbox" id="check">
-        <label class="icon-menu" for="check"><img src="iconos/icono-menu.png" alt="" class="icon-menu"
-                for="check"></label>
 
-        <nav class="menu">
-            <ul>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html">Ingreso</a></li>
-                <li><a href="crearusuario.html">Crear Usuario</a></li>
-                <li><a href="crearcapacitacion.html">Crear Capacitaciones</a></li>
-                <li><a href="listarcapacitaciones.html">Listar Capacitaciones</a></li>
-                <li><a href="administrarasistentes.html">Asistentes Capacitaciones</a></li>
-                <li><a href="listadovisitas.html">Listado Visitas</a></li>
-                <li><a href="listadopago.html">Listado Pago</a></li>
-                <li><a href="listadoasesorias.html">Listado Asesorías</a></li>
-                <li><a href="listadoaccidentes.html">Listado Accidentes</a></li>
-                <li><a href="reportes.html">Reportes</a></li>
+    <div id="agrupar">
+        <header id="cabecera">
+            <h2>FORMULARIO INGRESO DE ACCIDENTE</h2>
+        </header>
+        <aside id="aside">
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <blockquote><a href="contacto.html">CONTACTO</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="login.html">INGRESO</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="crearcapacitacion.html">CREAR CAPACITACIONES</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="listarcapacitaciones.html">LISTAR CAPACITACIONES</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="administrarasistentes.html">ASISTENTES A CAPACITACIONES</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="crearusuario.html">CREAR USUARIO</a></blockquote>
+                    </li>
 
-            </ul>
-        </nav>
-        </div>
-    </header>
+                    <li>
+                        <blockquote><a href="listadovisitas.html">LISTADO VISITAS</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="listadopago.html">LISTADO PAGO</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="listadoasesorias.html">LISTADO ASESORÍAS</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="reportes.html">REPORTES</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="listadoaccidentes.html">FORMULARIO ACCIDENTES</a></blockquote>
+                    </li>
+
+                </ul>
+            </nav>
+        </aside>
 
 
-    <form class="cmxform" id="accForm" method="get" action="#">
-        <fieldset class="cel- agrupar-t agrupar-e">
-            <table class="cel- tablaadm-t tablaadm-e">
+        <form class="cmxform" id="accForm" method="get" action="#">
+            <fieldset class="cel- agrupar-t agrupar-e">
+                <table class="cel- tablaadm-t tablaadm-e">
 
-                <tr>
-                    <td>ID del Accidente</td>
-                    <td><input type="text" name="ID_Accidente" id="ID_Accidente" /> </td>
-                </tr>
+                    <tr>
+                        <td>ID del Accidente</td>
+                        <td><input type="text" name="ID_Accidente" id="ID_Accidente" /> </td>
+                    </tr>
 
-                <tr>
-                    <td>Fecha del Accidente</td>
-                    <td><input type="date" name="fecha" id="accfecha" /> </td>
-                </tr>
+                    <tr>
+                        <td>Fecha del Accidente</td>
+                        <td><input type="date" name="fecha" id="accfecha" /> </td>
+                    </tr>
 
-                <tr>
-                    <td>Hora del Accidente</td>
-                    <td><input type="time" name="hora" id="acchora" /> </td>
-                </tr>
+                    <tr>
+                        <td>Hora del Accidente</td>
+                        <td><input type="time" name="hora" id="acchora" /> </td>
+                    </tr>
 
-                <tr>
-                    <td>Lugar del Accidente</td>
-                    <td><input type="text" name="lugar" id="acclugar" /> </td>
-                </tr>
+                    <tr>
+                        <td>Lugar del Accidente</td>
+                        <td><input type="text" name="lugar" id="acclugar" /> </td>
+                    </tr>
 
-                <tr>
-                    <td>Origen</td>
-                    <td><input type="text" name="origen" id="accorigen" /> </td>
-                </tr>
+                    <tr>
+                        <td>Origen</td>
+                        <td><input type="text" name="origen" id="accorigen" /> </td>
+                    </tr>
 
-                <tr>
-                    <td><label for="cliente">Cliente</label></td>
-                    <td><select id="cliente" name="cliente">
-                            <option value="default">seleccione...</option>
-                            &nbsp<option value="TrapeciosPitillaSA">Trapecios Pitilla SA.</option>
-                            &nbsp<option value="VidriosTiritonLtda">Vidrios Tiritón Ltda.</option>
-                            &nbsp<option value="CuchillosElEstoqueSA">Cuchillos El Estoque SA.</option>
-                            &nbsp<option value="BusesCrashDummieSA">Buses Crash-Dummie SA.</option>
-                            &nbsp<option value="AndamiosPataCojaSPA">Andamios PataCoja SPA.</option>
-                        </select></td>
-                </tr>
+                    <tr>
+                        <td><label for="cliente">Cliente</label></td>
+                        <td><select id="cliente" name="cliente">
+                                <option value="default">seleccione...</option>
+                                &nbsp<option value="TrapeciosPitillaSA">Trapecios Pitilla SA.</option>
+                                &nbsp<option value="VidriosTiritonLtda">Vidrios Tiritón Ltda.</option>
+                                &nbsp<option value="CuchillosElEstoqueSA">Cuchillos El Estoque SA.</option>
+                                &nbsp<option value="BusesCrashDummieSA">Buses Crash-Dummie SA.</option>
+                                &nbsp<option value="AndamiosPataCojaSPA">Andamios PataCoja SPA.</option>
+                            </select></td>
+                    </tr>
 
-                <tr>
-                    <td>Consecuencias</td>
-                    <td><textarea name="consecuencias" id="accconsecuencias" placeholder="">
+                    <tr>
+                        <td>Consecuencias</td>
+                        <td><textarea name="consecuencias" id="accconsecuencias" placeholder="">
                         </textarea></td>
                 </tr>
 
@@ -98,12 +120,8 @@
             </table>
         </fieldset>
     </form>
+  
 
-
-
-    <aside id="aside">
-        <blockquote><a href="index.html">Volver a la página de Inicio</a></blockquote>
-    </aside>
     <footer id="pie">
         Derechos Reservados &copy; 2020
     </footer>
