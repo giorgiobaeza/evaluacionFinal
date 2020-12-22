@@ -220,6 +220,14 @@ a {
             display: inline-block;  
             font-size: 18px;
     }
+    .cel-3{
+        display: inline-block;
+        list-style: none;
+        padding: 0px;
+        font: bold 14px verdana, sans-serif;
+        width: 100%;
+        float: none;
+    }
 /*estilos para tablets*/
     @media only screen and (min-width:600px) {
 
