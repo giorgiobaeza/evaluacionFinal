@@ -14,54 +14,95 @@
 </head>
 
 <body>
-   
+
+    <div id="agrupar">
         <header id="cabecera">
-            <h2>
-                Ingresar Accidente
-            </h2>
+            <h1>Sistema de Asesorías En Prevención de Riesgos</h1>
         </header>
-       
+        <aside id="aside">
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <blockquote><a href="contacto.html">CONTACTO</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="login.html">INGRESO</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="crearcapacitacion.html">CREAR CAPACITACIONES</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="listarcapacitaciones.html">LISTAR CAPACITACIONES</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="administrarasistentes.html">ASISTENTES A CAPACITACIONES</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="crearusuario.html">CREAR USUARIO</a></blockquote>
+                    </li>
+
+                    <li>
+                        <blockquote><a href="listadovisitas.html">LISTADO VISITAS</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="listadopago.html">LISTADO PAGO</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="listadoasesorias.html">LISTADO ASESORÍAS</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="reportes.html">REPORTES</a></blockquote>
+                    </li>
+                    <li>
+                        <blockquote><a href="listadoaccidentes.html">LISTADO ACCIDENTES</a></blockquote>
+                    </li>
+
+                </ul>
+            </nav>
+        </aside>
+
+
         <form class="cmxform" id="accForm" method="get" action="#">
             <fieldset class="cel- agrupar-t agrupar-e">
                 <table class="cel- tablaadm-t tablaadm-e">
 
                     <tr>
                         <td>ID del Accidente</td>
-                        <td><input type="text" name="ID_Accidente" id="ID_Accidente"/> </td>
+                        <td><input type="text" name="ID_Accidente" id="ID_Accidente" /> </td>
                     </tr>
 
                     <tr>
                         <td>Fecha del Accidente</td>
-                        <td><input type="date" name="fecha" id="accfecha"/> </td>
+                        <td><input type="date" name="fecha" id="accfecha" /> </td>
                     </tr>
-                    
+
                     <tr>
                         <td>Hora del Accidente</td>
-                        <td><input type="time" name="hora" id="acchora"/> </td>
+                        <td><input type="time" name="hora" id="acchora" /> </td>
                     </tr>
-                   
+
                     <tr>
                         <td>Lugar del Accidente</td>
-                        <td><input type="text" name="lugar" id="acclugar"/> </td>
+                        <td><input type="text" name="lugar" id="acclugar" /> </td>
                     </tr>
-                   
+
                     <tr>
-                        <td>Origen</td>    
-                        <td><input type="text" name="origen" id="accorigen"/> </td>
+                        <td>Origen</td>
+                        <td><input type="text" name="origen" id="accorigen" /> </td>
                     </tr>
-                    
+
                     <tr>
                         <td><label for="cliente">Cliente</label></td>
                         <td><select id="cliente" name="cliente">
-                            <option value="default">seleccione...</option>
-                            &nbsp<option value="TrapeciosPitillaSA" >Trapecios Pitilla SA.</option>
-                            &nbsp<option value="VidriosTiritonLtda" >Vidrios Tiritón Ltda.</option>
-                            &nbsp<option value="CuchillosElEstoqueSA" >Cuchillos El Estoque SA.</option>
-                            &nbsp<option value="BusesCrashDummieSA" >Buses Crash-Dummie SA.</option>
-                            &nbsp<option value="AndamiosPataCojaSPA" >Andamios PataCoja SPA.</option>
-                        </select></td>
+                                <option value="default">seleccione...</option>
+                                &nbsp<option value="TrapeciosPitillaSA">Trapecios Pitilla SA.</option>
+                                &nbsp<option value="VidriosTiritonLtda">Vidrios Tiritón Ltda.</option>
+                                &nbsp<option value="CuchillosElEstoqueSA">Cuchillos El Estoque SA.</option>
+                                &nbsp<option value="BusesCrashDummieSA">Buses Crash-Dummie SA.</option>
+                                &nbsp<option value="AndamiosPataCojaSPA">Andamios PataCoja SPA.</option>
+                            </select></td>
                     </tr>
-                  
+
                     <tr>
                         <td>Consecuencias</td>
                         <td><textarea name="consecuencias" id="accconsecuencias" placeholder="">
@@ -73,9 +114,9 @@
                     </tr>
 
                 </table>
-            </fieldset>    
+            </fieldset>
         </form>
-        
+
 
 
         <aside id="aside">
@@ -85,8 +126,8 @@
             Derechos Reservados &copy; 2020
         </footer>
 
- 
-    
+    </div>
+
 
 
 </body>
