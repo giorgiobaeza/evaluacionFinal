@@ -436,3 +436,182 @@ function chequeo() {
         alert("¡Haz denegado el mensaje!");
     }
 }
+//validaciones para listado accidentes
+$(document).ready(function(){
+
+    $.validator.addMethod("valueNotEquals", function(value, element, arg){
+        return arg !== value;
+       }, "Value must not equal arg.")
+ 
+    
+    $('#accForm').validate({
+        rules: {
+           
+            ID_Accidente: {
+                required: true,
+                digits: true,
+                max: 10000,
+                min: 1
+            },                
+                       
+            fecha: "required",
+            hora: "required",
+
+            lugar:  {
+                required: true,
+                minlength: 1,
+                maxlength: 150
+            },
+
+            origen:  {
+                required: true,
+                minlength: 1,
+                maxlength: 100
+            },
+
+
+            cliente: {
+                valueNotEquals: "default"
+            },
+         
+            
+            consecuencias: {
+                minlength: 1,
+                maxlength: 100
+            },
+            
+           
+        },
+
+        messages: {
+            ID_Accidente: {
+                required: "Este es un campo obligatorio.",
+                minlength: "Este es un campo obligatorio.",
+                maxlength: "Excede numero máximo de caracteres."
+            },
+
+            fecha: {
+                required: "Este es un campo obligatorio."
+            },    
+            
+            hora: {
+                required: "Este es un campo obligatorio."
+            },    
+           
+            lugar:  {
+                required: "Este es un campo obligatorio.",
+                minlength: "Este es un campo obligatorio.",
+                maxlength: "Excede numero máximo de caracteres."
+            },
+
+            origen:  {
+                required: "Este es un campo obligatorio.",
+                minlength: "Este es un campo obligatorio.",
+                maxlength: "Excede numero máximo de caracteres."
+            },
+
+
+            cliente: "Este es un campo obligatorio.",
+
+            consecuencias: {
+                maxlength: "Excede numero máximo de caracteres."
+            },
+
+        }
+
+    });
+
+
+});
+//validaciones para formulario Administra Asistentes
+$(document).ready(function () {
+    $.validator.addMethod("valueNotEquals", function (value, element, arg) {
+        return arg !== value;
+    }, "Value must not equal arg.")
+
+    $('#formNuevoAsist').validate({
+        rules: {
+            ident: {
+                required: true,
+                number: true,
+                max: 10000
+            },
+            nombre: {
+                required: true,
+                maxlength: 100
+            },
+
+            edad: {
+                required: true,
+                number: true,
+                max: 150
+
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            telefono: {
+                required: true,
+                minlength: 12
+
+            },
+            cap: {
+                valueNotEquals: "default"
+            }
+        },
+
+        messages: {
+            ident: {
+                required: "Este es un campo obligatorio.",
+                max: "Identificador mayor a 0 y menor a 10000."
+            },
+            nombre: {
+                required: "Este es un campo obligatorio.",
+                maxlength: "Nombre debe ser mayor a 0 y menor a 100 caracteres"
+            },
+
+            edad: {
+                required: "Este es un campo obligatorio.",
+                max: "Ingresar un número mayor a 0 y menor a 150"
+            },
+            email: {
+                required: "Este es un campo obligatorio.",
+                email: "El formato del correo es este: abdsdfc@abc.cl"
+            },
+
+            telefono: {
+                required: "Este es un campo obligatorio.",
+                minlength: "Ingrese número de teléfono válido",
+            },
+            cap: {
+                valueNotEquals: "Seleccione una opción"
+            },
+
+        }
+    });
+
+
+});
+
+//JQUERY para el menú
+$(document).ready(function(){
+    
+    $(window).scroll(function(){
+        
+        if($(window).scrollTop() > 100){
+            
+            $('header').addClass('header2');
+        }else{
+            $('header').removeClass('header2');
+        }
+        
+    })
+    
+})
+//aplica datatables
+$(document).ready( function () {
+    $('#tableid').DataTable({
+        responsive: true
+    });
+} );
