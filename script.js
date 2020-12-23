@@ -318,6 +318,7 @@ function validaRut(campo){
     if ( campo.length < 8 ){ return false; }
 
     campo = campo.replace('-','')
+    campo = campo.replace(/\./g,'')
     var suma = 0;
     var caracteres = "1234567890kK";
     var contador = 0;    
@@ -369,7 +370,7 @@ $(document).ready(function(){
         messages: {
             rutlogin: {
                 required: "Este es un campo obligatorio.",
-                rut: "Debe ingresar su rut sin puntos con guión"
+                rut: "Debe ingresar un rut válido."
             },
             passlogin: {
                 required: "Este es un campo obligatorio.",
@@ -380,7 +381,7 @@ $(document).ready(function(){
     });
 
 });
-//validación de checklist
+//validación de listarchecklist.html
 function chequeo() {
     c1 = document.getElementById("chek1");
     c2 = document.getElementById("chek2");
@@ -425,7 +426,7 @@ function chequeo() {
     } else
         alert("Por favor seleccionar al menos un chequeo")
 }
-//validaciones listado visitas
+//validaciones listadovisitas.html
 function chequeo() {
     var mensaje = confirm('¿Desea validar y modificar los chequeos de esta visita?');
     if (mensaje) {
@@ -436,7 +437,7 @@ function chequeo() {
         alert("¡Haz denegado el mensaje!");
     }
 }
-//validaciones para listado accidentes
+//validaciones para listadoaccidentes.html
 $(document).ready(function(){
 
     $.validator.addMethod("valueNotEquals", function(value, element, arg){
@@ -523,7 +524,7 @@ $(document).ready(function(){
 
 
 });
-//validaciones para formulario Administra Asistentes
+//validaciones para formulario administrarasistentes.html
 $(document).ready(function () {
     $.validator.addMethod("valueNotEquals", function (value, element, arg) {
         return arg !== value;
@@ -594,21 +595,7 @@ $(document).ready(function () {
 
 });
 
-//JQUERY para el menú
-$(document).ready(function(){
-    
-    $(window).scroll(function(){
-        
-        if($(window).scrollTop() > 100){
-            
-            $('header').addClass('header2');
-        }else{
-            $('header').removeClass('header2');
-        }
-        
-    })
-    
-})
+
 //aplica datatables
 $(document).ready( function () {
     $('#tableid').DataTable({
