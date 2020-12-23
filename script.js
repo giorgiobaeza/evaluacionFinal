@@ -425,3 +425,14 @@ function chequeo() {
     } else
         alert("Por favor seleccionar al menos un chequeo")
 }
+//validaciones listado visitas
+function chequeo() {
+    var mensaje = confirm('¿Desea validar y modificar los chequeos de esta visita?');
+    if (mensaje) {
+
+        location.href = "responderchecklist.html";
+    }
+    else {
+        alert("¡Haz denegado el mensaje!");
+    }
+}

@@ -78,7 +78,8 @@ p {
 }
 
 th {
-    color: rgb(0, 185, 185);
+    color: white;
+    background-color: #022D36;
 }
 
 td {
@@ -189,7 +190,7 @@ a {
 }
 
 table.dataTable tbody th, table.dataTable tbody td {
-    background-color:rgba(61, 1, 58, 0.746);
+    background-color:rgb(1, 56, 78);
     }
     table.dataTable {
         width: 50%;
@@ -305,9 +306,6 @@ table.dataTable tbody th, table.dataTable tbody td {
         display: none;
     }
     
-    body {
-        background-image: url(https://coordinatecnica.com/wp-content/uploads/2014/10/fondo-1-1920.jpg);
-    }
     
     a {
         color: #82EEFD;
@@ -321,7 +319,6 @@ table.dataTable tbody th, table.dataTable tbody td {
         padding: 10px 0px;
         margin-top: 10px;
         font-size: 14px;
-        margin-top:140px;
         z-index:1;
 
 
@@ -434,7 +431,6 @@ table.dataTable tbody th, table.dataTable tbody td {
     @media screen and (max-width: 600px) {
 
         header {
-            position: fixed;
             top: 0;
             height: 60px;
         }
