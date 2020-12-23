@@ -180,15 +180,12 @@ a {
     display: flex;
 }
 
-/*#menu li {
-    text-align: center;
-    flex-grow: 1;
-}*/
 
 #menu li:hover {
     background: rgba(0, 0, 0, 0.3);
 }
 
+<<<<<<< Updated upstream
 table.dataTable tbody th, table.dataTable tbody td {
     background-color:rgb(1, 56, 78);
     }
@@ -312,6 +309,11 @@ table.dataTable tbody th, table.dataTable tbody td {
         font-family: Arial, Helvetica, sans-serif;
     
     }
+=======
+tbody td {
+    color: #008d7a; 
+}
+>>>>>>> Stashed changes
 
 /*estilos celulares*/
     [class*="cel-"] {

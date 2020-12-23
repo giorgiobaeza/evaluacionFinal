@@ -84,9 +84,15 @@ $(document).ready(function(){
     })
     
 })
+<<<<<<< Updated upstream
 //aplica datatables
 $(document).ready( function () {
     $('#tableid').DataTable({
         responsive: true
     });
+=======
+//script data tables
+$(document).ready( function () {
+    $('#tableid').DataTable();
+>>>>>>> Stashed changes
 } );
