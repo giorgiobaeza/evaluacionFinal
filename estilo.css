@@ -98,6 +98,7 @@ table {
     margin: 0 auto;
 }
 
+
 input {
     margin: 10px;
 }
@@ -107,9 +108,7 @@ canvas {
 }
 
 fieldset {
-    max-width: 1000px;
     background-color: rgb(65, 0, 61, 0.25);
-    margin-right: auto;
 }
 
 legend {
@@ -185,14 +184,133 @@ a {
     background: rgba(0, 0, 0, 0.3);
 }
 
-/*#menu li {
-    display: inline-block;
-    list-style: none;
-    padding: 0px;
-    font: bold 14px verdana, sans-serif;
-    width: 100%;
-    float: none;
-}*/
+table.dataTable tbody th, table.dataTable tbody td {
+    background-color:rgba(61, 1, 58, 0.746);
+    }
+    table.dataTable {
+        width: 50%;
+        margin: 0 auto;
+        clear: both;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    header {
+        width: 100%;
+        min-height: 130px;
+        height: 150px;
+        padding: 20px;
+        background-color: #022D36;
+        text-align: center;
+        margin-bottom: auto;
+    }
+    
+    main h2 {
+        font-size: 30px;
+        margin-top: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    
+    main p {
+        margin-top: 10px;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    header:hover {
+    
+        -webkit-transition: all 300ms;
+        transition: all 300ms;
+    }
+    
+    .content-menu {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+    }
+    
+    .content-menu img {
+        width: 100px;
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+    }
+    
+    
+    #check {
+        display: none;
+    }
+    
+    .seccion {
+        background-color: #022D36;
+        border: 1px solid #999999;
+        width: 100%;
+        height: 150px;
+        padding: 20px;
+    
+    }
+    
+    .menu {
+        width: 100%;
+        margin-top: 20px;
+        z-index:2;
+        position: relative;
+
+    }
+    
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+    
+    .menu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    
+    .menu ul li {
+        list-style: none;
+    }
+    
+    .menu ul li a {
+        padding: 12px;
+        text-decoration: none;
+        color: white;
+        font: verdana, sans-serif;
+        flex-grow: 1;
+    }
+    
+    .menu ul li a:hover {
+        background: rgba(0, 0, 0, 0.3);
+        flex-grow: 1;
+    }
+    
+    
+    .icon-menu img {
+        display: none;
+    }
+    
+    body {
+        background-image: url(https://coordinatecnica.com/wp-content/uploads/2014/10/fondo-1-1920.jpg);
+    }
+    
+    a {
+        color: #82EEFD;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
 /*estilos celulares*/
 [class*="cel-"] {
     width: 95%;

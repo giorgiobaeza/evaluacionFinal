@@ -1,5 +1,7 @@
 Sistema de Asesorías En Prevención de Riesgos
 *********************************************
+
+
 Desarrolladores:
     - Jorge Baeza
     - Yamilet Ancan
@@ -15,10 +17,9 @@ Proyecto:
     procesos de gestión, planificacion, control,  seguridad, y disponibilidad de 
     información para la empresa y sus clientes. 
     
-
-
     El proyecto, aún en desarrollo, permite adminsitrar los principales procesos que 
     se llevan a cabo día a día en la empresa.
+
     Para ello se han creado las siguientes interfaces gráficas:
 
     - index.html: Página de inicio del portal con información relevante del proyecto.
@@ -38,7 +39,7 @@ Proyecto:
     - crearasesorias.html: Contiene un formulario para agregar una nueva asesoría.
     - reportes.html: Sitio con reportes en forma de gráficos de diversos tipos.
     - administrarasistentes.html: Listado con datos de asisentes y Formulario para ingresar asistentes.
-    - login.html: Contiene un acceso al portal para usuarios, a través de su RUT y una clave. 
+    - login.html: Contiene un acceso al portal para usuarios, a través de su RUT y una clave.
     - listadoaccidentes: Contiene un formulario que permita agregar accidentes al sistema.
 
     Como complemento a estos sitios .HTML, el proyecto contempla documento .CSS con informacion 
