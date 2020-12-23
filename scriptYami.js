@@ -84,3 +84,9 @@ $(document).ready(function(){
     })
     
 })
+//aplica datatables
+$(document).ready( function () {
+    $('#tableid').DataTable({
+        responsive: true
+    });
+} );
